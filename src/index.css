@@ -2,19 +2,51 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: gothampro;
+
 }
 
 
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+
+
+@font-face{ 
+  font-family: gothampro;
+  src: url('./assets/fonts/gotham/gothampro.ttf');
+}
+@font-face{ 
+  font-family: gothampro_black;
+  src: url('./assets/fonts/gotham/gothampro_black.ttf');
+}
+@font-face{ 
+  font-family: gothampro_blackitalic;
+  src: url('./assets/fonts/gotham/gothampro_blackitalic.ttf');
+}
+@font-face{ 
+  font-family: gothampro_bold;
+  src: url('./assets/fonts/gotham/gothampro_bold.ttf');
+}
+@font-face{ 
+  font-family: gothampro_bolditalic;
+  src: url('./assets/fonts/gotham/gothampro_bolditalic.ttf');
+}
+@font-face{ 
+  font-family: gothampro_italic;
+  src: url('./assets/fonts/gotham/gothampro_italic.ttf');
+}
+@font-face{ 
+  font-family: gothampro_light;
+  src: url('./assets/fonts/gotham/gothampro_light.ttf');
+}
+@font-face{ 
+  font-family: gothampro_lightitalic;
+  src: url('./assets/fonts/gotham/gothampro_lightitalic.ttf');
+}
+@font-face{ 
+  font-family: gothampro_medium;
+  src: url('./assets/fonts/gotham/gothampro_medium.ttf');
+}
+@font-face{ 
+  font-family: gothampro_mediumitalic;
+  src: url('./assets/fonts/gotham/gothampro_mediumitalic.ttf');
 }

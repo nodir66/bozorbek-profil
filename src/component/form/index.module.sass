@@ -1,6 +1,8 @@
-.form_content  
+.form_content 
+    width: 400px
+
     .text 
-        width: 365px
+        width: 100%
         margin-bottom: 30px
         h1 
             font-weight: 700
@@ -20,7 +22,7 @@
 
         .inp 
             position: relative 
-            width: 350px
+            width: 100%
             margin-bottom: 20px
 
 
@@ -52,3 +54,11 @@
             padding: 10px 19px   
             border: transparent
             cursor: pointer
+
+@media  (max-width: 800px)
+    .form_content     
+        width: 300px
+
+@media (max-width: 1000px)
+    .form_content 
+        margin-left: 140px

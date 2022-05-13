@@ -4,11 +4,10 @@ import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
-import "./profil.sass"
-import { Form } from '../form/form';
-import { Form2 } from '../form2/form2';
-import { Profile } from '../../component2/form/Profile.jsx'
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import styles from "./index.module.sass"
+import { Profile } from '../../component2/formpro/index.jsx'
+import { Historycontent } from '../history_content/index.jsx'
+import { Settings } from '../settings_block/index.jsx'
 
 
 function TabPanel(props) {
@@ -55,7 +54,7 @@ export default function VerticalTabs() {
     <Box
       sx={{ flexGrow: 1, bgcolor: 'background.paper', display: 'flex', height: 224 }}
     >
-      <Tabs className="tab_content"
+      <Tabs className={styles.tab_content}
         orientation="vertical"
         variant="scrollable"
         value={value}
@@ -63,10 +62,10 @@ export default function VerticalTabs() {
         aria-label="Vertical tabs example"
         sx={{ borderRight: 1, borderColor: 'divider' }}
       >
-        <Tab className="tab_item" label="Профиль" {...a11yProps(0)} />
-        <Tab className="tab_item" label="История заказов" {...a11yProps(1)} />
-        <Tab className="tab_item" label="История поиска" {...a11yProps(2)} />
-        <Tab className="tab_item" label="Настройки безопасности" {...a11yProps(3)} />
+        <Tab className={styles.tab_item} label="Профиль" {...a11yProps(0)} />
+        <Tab className={styles.tab_item} label="История заказов" {...a11yProps(1)} />
+        <Tab className={styles.tab_item} label="История поиска" {...a11yProps(2)} />
+        <Tab className={styles.tab_item} label="Настройки безопасности" {...a11yProps(3)} />
       </Tabs>
       <TabPanel value={value} index={0}>
         <Profile/>
@@ -76,12 +75,11 @@ export default function VerticalTabs() {
         Item Two
       </TabPanel>
       <TabPanel value={value} index={2}>
-        Item Three
+        <Historycontent/>
+        
       </TabPanel>
-      <TabPanel value={value} index={3}>
-          
-        <Form/>
-        <Form2/>
+      <TabPanel className={styles.item4}  value={value} index={3}>
+        <Settings/>
       </TabPanel>
       
     </Box>

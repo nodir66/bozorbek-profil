@@ -1,10 +1,10 @@
 import { useState } from 'react';
 import viev from '../../../assets/img/view.png'
+import styles from "../index.module.sass"
 
 
 
-export const Input22 = () => {
-
+export const Input2 = () => {
 
     const [passwordType, setPasswordType] = useState("password");
     const [passwordInput, setPasswordInput] = useState("");
@@ -21,13 +21,14 @@ export const Input22 = () => {
     }
 
 
-    return (
+
+
+    return(
         <div>
-            <div className="inp">
+            <div className={styles.inp}>
                 <input  type={passwordType} onChange={handlePasswordChange} value={passwordInput} name="password"  placeholder="Введите новый пароль" />
                 <img onClick={togglePassword}  src={viev} alt="" />
             </div>
-            
         </div>
     );
 };

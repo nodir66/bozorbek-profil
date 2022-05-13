@@ -1,5 +1,6 @@
 .profile
     display: flex
+    margin-left: 140px
     
 
     .profile_leftt
@@ -28,6 +29,8 @@
                 font-weight: 400
                 font-size: 30px
                 color: #42445A
+                font-family: gothampro_bold
+
                 
 
             p
@@ -49,6 +52,10 @@
                     margin-bottom: 5px
                     border-left: 4px solid #70ADEE
                     height: 40px
+                    font-family: gothampro
+
+
+
 
 
         span
@@ -57,7 +64,7 @@
             color: #FF0505
             display: flex
             justify-content: center
-            margin-top: 80px
+            margin-top: 30px
             cursor: pointer
 
 
@@ -106,3 +113,25 @@
 @media  (max-width: 1100px)
     .profile 
         display: block
+        .profile_right  
+            width: 438px 
+
+@media (max-width: 700px)
+    .profile 
+        .profile_leftt 
+            width: 300px
+
+        .profile_right  
+            width: 300px
+
+
+@media (min-width: 1500px)
+    .profile
+        display: flex !important
+        justify-content: space-around !important
+
+        .profile_leftt 
+            margin-right: 300px
+            
+
+

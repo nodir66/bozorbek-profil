@@ -1,7 +1,7 @@
 import { useState } from 'react';
-import "./form2.sass"
-import { Input22 } from './input2/input22';
-import { Input33 } from './input2/input33';
+import styles from "./index.module.sass"
+import { Input22 } from './input2';
+import { Input33 } from './input2/index2';
 import viev from '../../assets/img/view.png'
 import { Link } from "react-router-dom";
 
@@ -26,14 +26,14 @@ export const Form2 = () => {
 
     return (
         <div>
-            <div className="form_content">
-                <div className="text">
+            <div className={styles.form_content}>
+                <div className={styles.text}>
                     <h1>Пароли безапасности</h1>
                     <p>Пароль должен содержать включая цифры, буквы и специальные символы (!?@%%).</p>
                 </div>
 
-                <div  className="form">
-                    <div className="inp">
+                <div  className={styles.form}>
+                    <div className={styles.inp}>
                         <input  type={passwordType} onChange={handlePasswordChange} value={passwordInput} name="password"  placeholder="Введите старый пароль" />
                         <img onClick={togglePassword}  src={viev} alt="" />
                     </div>
@@ -43,7 +43,7 @@ export const Form2 = () => {
                     <Input33/>
                 </div>
 
-                <div className="text_parol">
+                <div className={styles.text_parol}>
                     <p>Если вы забыли пароль, вы можете .
                         <b>сбросить его через Телефон</b>
                     </p>
@@ -53,9 +53,9 @@ export const Form2 = () => {
                 
 
 
-                <div className="button">
+                <div className={styles.button}>
                     <button>Востановить</button>
-                    <button className="save_btn">Сохранить</button>
+                    <button className={styles.save_btn}>Сохранить</button>
                 </div>
             </div>
             

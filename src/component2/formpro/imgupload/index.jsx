@@ -1,5 +1,5 @@
 import React ,{ useState } from 'react';
-import "./Img.sass"
+import styles from "./index.module.sass"
 import avatar from "../../../assets/img/avatar3.png"
 
 export const UploadAndDisplayImage = () => {
@@ -18,9 +18,9 @@ export const UploadAndDisplayImage = () => {
     };
     return (
         <div>
-            <div className="img">
+            <div className={styles.img}>
                 <img  src={imgData ? imgData : avatar} alt="" />
-                <i className="fa fa-camera cam">
+                <i className={`fa fa-camera ${styles.cam}`}>
                     <input 
                       type="file"
                       name="myImage"

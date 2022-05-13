@@ -1,8 +1,8 @@
 import { useState } from 'react';
 import viev from '../../assets/img/view.png'
-import "./form.sass"
-import { Input2 } from './input/input2';
-import { Input3 } from './input/input3';
+import styles from "./index.module.sass"
+import { Input2 } from './input';
+import { Input3 } from './input/index2';
 import { Link } from "react-router-dom";
 
 
@@ -33,14 +33,14 @@ export const Form = () => {
 
     return (
         <div>
-            <div className="form_content">
-                <div className="text">
+            <div className={styles.form_content}>
+                <div className={styles.text}>
                     <h1>Востановление пароля</h1>
                     <p>Введите  SMS код высленный вам на номер, указанный в вашем профиле +998 *******12</p>
                 </div>
 
-                <div  className="form">
-                    <div className="inp">
+                <div  className={styles.form}>
+                    <div className={styles.inp}>
                         <input  type={passwordType} onChange={handlePasswordChange} value={passwordInput} name="password"  placeholder="Введите код" />
                         <img onClick={togglePassword}  src={viev} alt="" />
                     </div>
@@ -50,17 +50,17 @@ export const Form = () => {
                     <Input3/>
                 </div>
 
-                <div className="text_parol">
+                {/* <div className={styles.text_paroll}>
                     <p>Если вы забыли пароль, вы можете .
                         <b>сбросить его через Телефон</b>
                     </p>
-                </div>
+                </div> */}
 
 
                 
 
 
-                <div className="button">
+                <div className={styles.button}>
                     <button>Востановить</button>
                 </div>
             </div>

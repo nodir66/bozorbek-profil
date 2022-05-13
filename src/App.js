@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
-import  Profil  from './component/profil/profil.js';
+import  Profil  from './component/profil';
 
 function App() {
   return (
