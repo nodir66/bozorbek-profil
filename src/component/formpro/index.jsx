@@ -6,6 +6,9 @@ import face from '../../assets/img/face.png'
 
 
 
+  
+
+
 
 const handleValidate  = (values) => {
     const errors = {}
@@ -55,12 +58,13 @@ export const Profile = () => {
         },
 
         validate: handleValidate,
-        onSubmit: values => {
-
-            
-
-        }    
+         
     })
+
+
+
+
+    
 
 
     
@@ -81,7 +85,7 @@ export const Profile = () => {
 
                 <div className={styles.info}>
                     <ul>
-                        <li>Нина</li>
+                        <li>{}</li>
                         <li>Азаматова</li>
                         <li>Ninaazamatova@gmail.com</li>
                         <li>+998 91 655 55 55</li>

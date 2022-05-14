@@ -5,7 +5,7 @@ import Tab from '@mui/material/Tab';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 import styles from "./index.module.sass"
-import { Profile } from '../../component2/formpro/index.jsx'
+import { Profile } from '../../component/formpro/index.jsx'
 import { Historycontent } from '../history_content/index.jsx'
 import { Settings } from '../settings_block/index.jsx'
 
